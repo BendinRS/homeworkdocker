@@ -32,6 +32,6 @@ https://hub.docker.com/r/tomzo/buildkernel?ref=https://githubhelp.com
 Mysql не хочет ставиться на архитектуру linux/arm64/v8
 Обещаю вернуться
 
-Начало в [PHP_nginx](PHP_nginx)
+Начало в [Php_nginx](Php_nginx)
 
 ![Альтернативный текст](https://i.ibb.co/S3J8Gt3/1234.png)
