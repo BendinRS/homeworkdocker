@@ -1,0 +1,26 @@
+version: '3'
+services:
+    nginx:
+        build: ./nginx
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./hosts:/etc/nginx/default.conf
+            - ./hosts/www:/var/www/
+        # nginx должен общаться с php контейнером
+ #       network_mode: none
+    php:
+        build: ./php
+        volumes:
+            - ./php/php.ini:/usr/local/etc/php/conf.d/40-custom.ini
+ #       network_mode: none
+    # mysql:
+    #     image: mysql
+    #     platform: linux/arm64/v8
+    #     ports:
+    #         - "3306:3306"
+    #     environment:
+    #         MYSQL_ROOT_PASSWORD: password
+    #         MYSQL_DATABASE: sait
+    #     network_mode: none
