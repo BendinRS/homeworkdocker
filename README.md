@@ -27,3 +27,9 @@ https://hub.docker.com/r/tomzo/buildkernel?ref=https://githubhelp.com
 + docker pull bendin/nginx
 + docker run -p 81:80 -d bendin/nginx
 
+### Задание со * (звездочкой)
+
+Mysql не хочет ставиться на архитектуру linux/arm64/v8
+Обещаю вернуться
+
+![Альтернативный текст](https://i.ibb.co/S3J8Gt3/1234.png)
